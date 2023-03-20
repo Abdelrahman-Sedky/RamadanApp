@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RamadanApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/jelly_bean_blue_dark</item>
+        <item name="colorPrimaryVariant">@color/jelly_bean_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

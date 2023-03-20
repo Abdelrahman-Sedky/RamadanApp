@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/scene1">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon2"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon3"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/scene2">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon2"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon3"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/hold_animation1">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon2"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon3"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/scene3">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon2"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon3"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon4"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/hold_animation2">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon2"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon3"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon4"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/scene4">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon3"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon4"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/hold_animation3">
+        <Constraint
+            android:id="@+id/moon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/moon3"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/moon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:src="@drawable/moon4"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars" />
+
+        <Constraint
+            android:id="@+id/ramadan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/bretty"
+            android:text="Ramadan Mubarak"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+        <Constraint
+            android:id="@+id/animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/stars"
+            app:layout_constraintEnd_toEndOf="@id/stars"
+            app:layout_constraintStart_toStartOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/smoke" />
+
+    </ConstraintSet>
+
+
+
+    <Transition
+        app:constraintSetEnd="@id/scene2"
+        app:constraintSetStart="@+id/scene1">
+        <OnClick app:targetId="@id/moon1" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/hold_animation1"
+        app:constraintSetStart="@+id/scene2"
+        app:autoTransition="animateToEnd"
+        app:duration="600"/>
+
+    <Transition
+        app:constraintSetEnd="@id/scene3"
+        app:constraintSetStart="@+id/hold_animation1">
+        <OnClick app:targetId="@id/moon2" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/hold_animation2"
+        app:constraintSetStart="@+id/scene3"
+        app:autoTransition="animateToEnd"
+        app:duration="600"/>
+
+    <Transition
+        app:constraintSetEnd="@id/scene4"
+        app:constraintSetStart="@+id/hold_animation2"
+        app:motionInterpolator="overshoot">
+        <OnClick app:targetId="@id/moon3" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/hold_animation3"
+        app:constraintSetStart="@+id/scene4"
+        app:autoTransition="animateToEnd" />
+</MotionScene>

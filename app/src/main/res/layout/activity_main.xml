@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jelly_bean_blue_dark"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/background_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/moon_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+    <ImageView
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:src="@drawable/stars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moon_guideline" />
+
+
+    <ImageView
+        android:id="@+id/moon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:src="@drawable/moon1"
+        app:layout_constraintBottom_toBottomOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/moon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:src="@drawable/moon2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars" />
+
+    <ImageView
+        android:id="@+id/moon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:src="@drawable/moon3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars" />
+
+    <ImageView
+        android:id="@+id/moon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:src="@drawable/moon4"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars" />
+
+    <include
+        android:id="@+id/clouds_layout"
+        layout="@layout/clouds_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars"
+        app:layout_constraintBottom_toBottomOf="@id/stars"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/stars"
+        app:layout_constraintEnd_toEndOf="@id/stars"
+        app:layout_constraintStart_toStartOf="@id/stars"
+        app:layout_constraintTop_toTopOf="@id/stars"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/smoke" />
+
+    <ImageView
+        android:id="@+id/decoration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/decoration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_guideline" />
+
+    <TextView
+        android:id="@+id/ramadan_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/bretty"
+        android:text="@string/ramadan_mubarak"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
